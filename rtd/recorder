@@ -114,7 +114,7 @@ end
 local lasttime = ostime()
 task.spawn(function()
 	while true do
-		timer = (ostime() - lasttime) * 2
+		timer = (ostime() - lasttime) * 1
 		task.wait(0.5)
 	end	
 end)
