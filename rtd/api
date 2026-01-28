@@ -113,7 +113,7 @@ function api:Start()
 	task.spawn(function()
 		lasttime = ostime()
 		while getgenv().lasttime do
-			getgenv().timer = (ostime() - getgenv().lasttime) * 2
+			getgenv().timer = (ostime() - getgenv().lasttime) * 3
 			--print(string.format("Timer: %.1f | Wave: %d", timer, waveinfo or 0))
 			
 			task.wait(0.5)
